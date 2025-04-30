@@ -1,0 +1,56 @@
+/* Navbar Styling */
+.navbar {
+    background: transparent; /* No background */
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    box-shadow: none; /* Remove shadow */
+  }
+  
+  /* Navbar List */
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Navbar Buttons */
+  .nav-links li {
+    display: inline;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+  }
+  
+  /* Login/Register Button */
+  .btn {
+    background: #007bff;
+    color: #fff;
+    border: 2px solid transparent;
+  }
+  
+  .btn:hover {
+    background: #0056b3;
+    border-color: #0056b3;
+  }
+  
+  /* Logout Button */
+  .logout-btn {
+    background: #dc3545;
+    color: white;
+    border: 2px solid transparent;
+  }
+  
+  .logout-btn:hover {
+    background: #a71d2a;
+    border-color: #a71d2a;
+  }
+  

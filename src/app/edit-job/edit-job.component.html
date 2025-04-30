@@ -1,0 +1,32 @@
+<form (ngSubmit)="updateJob()">
+    <label>Job Title:</label>
+    <input type="text" [(ngModel)]="job.JobTitle" name="JobTitle" required />
+  
+    <label>Company Name:</label>
+    <input type="text" [(ngModel)]="job.CompanyName" name="CompanyName" required />
+  
+    <label>Location:</label>
+    <input type="text" [(ngModel)]="job.Location" name="Location" required />
+  
+    <label>Job Type:</label>
+    <select [(ngModel)]="job.JobType" name="JobType" required>
+      <option value="Full-Time">Full-Time</option>
+      <option value="Part-Time">Part-Time</option>
+      <option value="Remote">Remote</option>
+    </select>
+  
+    <label>Salary Range:</label>
+    <input type="text" [(ngModel)]="job.SalaryRange" name="SalaryRange" required />
+  
+    <label>Job Description:</label>
+    <textarea [(ngModel)]="job.JobDescription" name="JobDescription" required></textarea>
+  
+    <label>Required Skills:</label>
+    <input type="text" [(ngModel)]="job.RequiredSkills" name="RequiredSkills" required />
+  
+    <label>Contact Email:</label>
+    <input type="email" [(ngModel)]="job.ContactEmail" name="ContactEmail" required />
+  
+    <button type="submit">Update Job</button>
+  </form>
+  

@@ -1,0 +1,100 @@
+/* Main Container */
+.container {
+  text-align: center;
+  padding: 50px;
+  background: linear-gradient(135deg, #ffffff, #f3f3f3);
+  border-radius: 15px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+  width: 50%;
+  margin: 50px auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+  transform: scale(1.02);
+}
+
+/* Title Styling */
+h2 {
+  font-size: 26px;
+  color: #222;
+  margin-bottom: 30px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* Buttons Wrapper */
+.options {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* Common Button Styling */
+button {
+  padding: 15px 25px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  color: white;
+}
+
+/* Gradient Background for Job Seeker Button */
+.jobseeker {
+  background: linear-gradient(90deg, #007bff, #0056b3);
+  box-shadow: 0px 4px 10px rgba(0, 123, 255, 0.4);
+}
+
+.jobseeker:hover {
+  background: linear-gradient(90deg, #0056b3, #003d80);
+  transform: scale(1.08);
+  box-shadow: 0px 0px 15px rgba(0, 123, 255, 0.8);
+}
+
+/* Gradient Background for Recruiter Button */
+.recruiter {
+  background: linear-gradient(90deg, #28a745, #1e7e34);
+  box-shadow: 0px 4px 10px rgba(40, 167, 69, 0.4);
+}
+
+.recruiter:hover {
+  background: linear-gradient(90deg, #1e7e34, #145c24);
+  transform: scale(1.08);
+  box-shadow: 0px 0px 15px rgba(40, 167, 69, 0.8);
+}
+
+/* Button Glowing Effect */
+button::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: calc(100% + 10px);
+  height: calc(100% + 10px);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.2);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+button:hover::before {
+  opacity: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .options {
+      flex-direction: column;
+      gap: 15px;
+  }
+  
+  button {
+      width: 100%;
+      padding: 18px;
+  }
+}
