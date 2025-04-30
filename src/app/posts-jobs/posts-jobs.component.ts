@@ -30,7 +30,7 @@ export class PostsJobsComponent {
 
   postJob() {
     console.log(this.job);
-    this.http.post('http://localhost:4000/job-post', this.job)
+    this.http.post('https://job-portal-backend-04kh.onrender.com/job-post', this.job)
  .subscribe(
       result => {
         console.log('Job posted successfully:', result);

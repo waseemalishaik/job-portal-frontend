@@ -20,7 +20,7 @@ export class LoginComponent {
 
   handleLogin() {
     this.http
-      .post('http://localhost:4000/login', this.userLogin)
+      .post('https://job-portal-backend-04kh.onrender.com/login', this.userLogin)
       .subscribe((response: any) => {
         console.log(response, response.result[0]);
         alert('login succesfull');

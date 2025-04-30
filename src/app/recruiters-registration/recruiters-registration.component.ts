@@ -19,7 +19,7 @@ ngOnInit(): void {
 
 register (){
 console.log(this.User)
-this.http.post('http://localhost:4000/Recruiter_Register',this.User).subscribe(result => { 
+this.http.post('https://job-portal-backend-04kh.onrender.com/Recruiter_Register',this.User).subscribe(result => { 
   console.log(result)
   this.router.navigate(['/posts-jobs']);
 })

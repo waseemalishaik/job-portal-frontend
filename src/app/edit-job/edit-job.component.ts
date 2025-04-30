@@ -15,13 +15,13 @@ export class EditJobComponent implements OnInit {
 
   ngOnInit(): void {
     const jobId = this.route.snapshot.paramMap.get('id'); // URL se job ID lena
-    this.http.get(`http://localhost:4000/job/${jobId}`).subscribe((data: any) => {
+    this.http.get(`https://job-portal-backend-04kh.onrender.com/job/${jobId}`).subscribe((data: any) => {
       this.job = data;  // API se job details lana
     });
   }
 
   updateJob() {
-    this.http.put(`http://localhost:4000/edit-job/${this.job.Id}`, this.job).subscribe(
+    this.http.put(`https://job-portal-backend-04kh.onrender.com/edit-job/${this.job.Id}`, this.job).subscribe(
       response => {
         console.log('Job updated successfully:', response);
       },

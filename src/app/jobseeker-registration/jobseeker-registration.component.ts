@@ -23,7 +23,7 @@ export class JobseekerRegistrationComponent {
   register() {
     console.log('Form Submitted:', this.User);
     this.http
-      .post('http://localhost:4000/JobSeeker_Register', this.User)
+      .post('https://job-portal-backend-04kh.onrender.com/JobSeeker_Register', this.User)
       .subscribe((result) => {
         console.log(result);
 

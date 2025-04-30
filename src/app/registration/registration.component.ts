@@ -21,7 +21,7 @@ navigateTo(path: string) {
 register() {
   console.log(this.User);
 
-  this.http.post('http://localhost:4000/waseem_users', this.User).subscribe(result => {
+  this.http.post('https://job-portal-backend-04kh.onrender.com/waseem_users', this.User).subscribe(result => {
     console.log(result);
     
     // Assuming registration is successful
